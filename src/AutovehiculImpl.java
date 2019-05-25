@@ -4,7 +4,7 @@ public interface AutovehiculImpl {
     int getPutere();
     int getMasa();
     float getValoare();
-    char getConfig();
+    String getConfig();
     int getNrCilindrii();
     float getCapacitate();
     String getNumeBrand();
@@ -16,7 +16,7 @@ public interface AutovehiculImpl {
     void setPutere(int putere);
     void setMasa(int masa);
     void setValoare(float valoare);
-    void setConfig(char config);
+    void setConfig(String config);
     void setNrCilindrii(int nr_cilindrii);
     void setCapacitate(float capacitate);
     void setNumeBrand(String denumire);

@@ -15,7 +15,7 @@ public class Autovehicul implements AutovehiculImpl {
 
     //CONSTRUCTOR
 
-    Autovehicul(int an_fabricatie, int putere, int masa, float valoare, Motor motor, String brand, String model, String culoare, String cutie_viteze){
+    Autovehicul(int an_fabricatie, String brand, String model, String culoare, Motor motor,  String cutie_viteze, int putere, int masa, float valoare){
         this.an_fabricatie = an_fabricatie;
         this.brand = brand;
         this.putere = putere;
@@ -33,7 +33,7 @@ public class Autovehicul implements AutovehiculImpl {
     public int getPutere(){ return this.putere; }
     public int getMasa(){ return this.masa; }
     public float getValoare(){ return this.valoare; }
-    public char getConfig(){ return this.motor.config; }
+    public String getConfig(){ return this.motor.config; }
     public int getNrCilindrii(){ return this.motor.nr_cilindrii; }
     public float getCapacitate(){ return this.motor.capacitate; }
     public String getNumeBrand(){ return this.brand; }
@@ -47,7 +47,7 @@ public class Autovehicul implements AutovehiculImpl {
     public void setPutere(int putere){ this.putere = putere; }
     public void setMasa(int masa){ this.masa = masa; }
     public void setValoare(float valoare){ this.valoare = valoare; }
-    public void setConfig(char config){ this.motor.config = config; }
+    public void setConfig(String config){ this.motor.config = config; }
     public void setNrCilindrii(int nr_cilindrii){ this.motor.nr_cilindrii = nr_cilindrii; }
     public void setCapacitate(float capacitate){ this.motor.capacitate = capacitate; }
     public void setNumeBrand(String denumire){ this.brand = denumire; }
@@ -58,7 +58,7 @@ public class Autovehicul implements AutovehiculImpl {
 
 class Motor {
 
-    char config;
+    String config;
     int nr_cilindrii;
     float capacitate;
 }
