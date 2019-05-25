@@ -9,7 +9,6 @@ public class Main {
         Scanner sc = new Scanner(input);
 
         ArrayList<Autovehicul> parcare;
-
         /*
         MOD CITIRE:
 
