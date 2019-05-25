@@ -1,4 +1,4 @@
-public class Motocicleta extends Autovehicul {
+class Motocicleta extends Autovehicul {
 
     private String clasa;
 

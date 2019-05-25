@@ -1,4 +1,4 @@
-public class ATV extends Autovehicul {
+class ATV extends Autovehicul {
 
     private String tip_teren;
 
